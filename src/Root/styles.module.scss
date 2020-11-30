@@ -1,0 +1,29 @@
+.root {
+    text-align: center;
+  }
+  
+  .root-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .root-logo {
+      animation: Root-logo-spin infinite 20s linear;
+    }
+  }
+  
+  
+  .root-link {
+    color: #61dafb;
+  }
+  
+  @keyframes Root-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

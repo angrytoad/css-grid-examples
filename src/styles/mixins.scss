@@ -1,0 +1,9 @@
+@mixin gridBox(){
+    border: 1px solid#40444C;
+    padding:20px;
+}
+
+@mixin gridBoxChild() {
+    @include gridBox();
+    border-color: #5C5E63;
+}

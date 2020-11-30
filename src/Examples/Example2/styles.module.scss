@@ -1,0 +1,56 @@
+@import '../../styles/mixins';
+
+.example2{
+    @include gridBox();
+    border: 1px solid #40444C;
+    color:white;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 250px;
+    grid-template-rows: 100px 400px auto 100px;
+    grid-gap: 1rem;
+    grid-template-areas: 
+    ". . . ."
+    "promoVideo promoVideo promoVideo sideBar"
+    "anotherArticle moreVideos moreVideos sideBar"
+    "footer footer footer footer";
+
+    .header{
+        @include gridBoxChild();
+        grid-column: 1 / 5;
+        grid-row: 1;
+    }
+
+    .promoVideo{
+        @include gridBoxChild();
+        grid-area: promoVideo;
+    }
+
+    .sideBar{
+        @include gridBoxChild();
+        grid-area: sideBar;
+    }
+
+    .anotherArticle{
+        @include gridBoxChild();
+        grid-area: anotherArticle;
+    }
+
+    .moreVideos{
+        @include gridBoxChild();
+        grid-area: moreVideos
+    }
+    
+    .footer{
+        @include gridBoxChild();
+        grid-area: footer;
+    }
+
+    .overlay{
+        display:none;
+        @include gridBoxChild();
+        opacity:0.9;
+        background:blue;
+        z-index: 2;
+        position: relative;
+    }
+}

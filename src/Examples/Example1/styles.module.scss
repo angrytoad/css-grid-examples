@@ -1,0 +1,14 @@
+@import '../../styles/mixins';
+
+.example1{
+    @include gridBox();
+    color:white;
+
+    .header{
+        @include gridBoxChild();
+    }
+
+    .article{
+        @include gridBoxChild();
+    }
+}
