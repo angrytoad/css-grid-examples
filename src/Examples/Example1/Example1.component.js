@@ -10,7 +10,7 @@ function Example1() {
             <div className={css.article}>Article 1</div>
             <div className={css.article}>Article 2</div>
             <div className={css.article}>Article 3</div>
-            <div className={css.article}>I'm a footer</div>
+            <div className={css.footer}>I'm a footer</div>
         </div>
         </>
     )
